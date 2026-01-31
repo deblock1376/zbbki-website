@@ -642,4 +642,9 @@ footer {
         grid-template-columns: 1fr;
         /* Force single column on small screens */
     }
+
+    /* Fix Bio Header overlap */
+    .bio-header {
+        padding-top: 150px;
+    }
 }
