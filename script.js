@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    document.querySelectorAll('section').forEach(section => {
-        section.classList.add('fade-in-section');
-        observer.observe(section);
-    });
+    // document.querySelectorAll('section').forEach(section => {
+    //     section.classList.add('fade-in-section');
+    //     observer.observe(section);
+    // });
 
     // Wisdom of the Sensei - Quote Rotator
     const quotes = [
