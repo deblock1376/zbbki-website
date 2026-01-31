@@ -607,4 +607,39 @@ footer {
         margin-left: 0;
         border-left: 2px solid var(--color-gold);
     }
+
+    /* Global Mobile Fixes */
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Fix potential fixed-width blocks in Bio */
+    .summary-block,
+    .intro-block,
+    .masters-section p {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Ensure grids don't overflow */
+    .masters-grid,
+    .disciplines-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        /* Force single column on small screens */
+    }
 }
